@@ -1,0 +1,158 @@
+@charset "UTF-8";
+.l-in__content {
+  z-index: 1;
+}
+
+.p-news_article {
+  background: #050042;
+  padding: 50px 5.9% 85px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .p-news_article {
+    padding: 12px 6.5% 36px;
+  }
+}
+
+.p-news_article__date {
+  color: #ffdf00;
+  font-family: YakuHanJP, "Bowlby One SC", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-size: 26px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 900px) {
+  .p-news_article__date {
+    font-size: 18px;
+  }
+}
+
+.p-news_article__title {
+  margin-top: 3px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 900px) {
+  .p-news_article__title {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+.p-news_article__txt {
+  margin-top: 41px;
+  border-top: 1px solid #ffffff;
+  padding-top: 50px;
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 2.3;
+}
+
+@media screen and (max-width: 900px) {
+  .p-news_article__txt {
+    margin-top: 14px;
+    padding-top: 29px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
+
+.p-news_article__txt a {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 901px) {
+  .p-news_article__txt a:hover {
+    text-decoration: none;
+  }
+}
+
+.p-news_article__txt img,
+.p-news_article__txt video,
+.p-news_article__txt iframe {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 901px) {
+  .p-news__back {
+    position: absolute;
+    top: -124px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .p-news__back {
+    margin-top: -14px;
+    margin-bottom: 18px;
+    font-size: 0;
+    letter-spacing: -0.4em;
+  }
+}
+
+.p-news__back a {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  width: 100%;
+  color: #ffffff;
+  font-family: YakuHanJP, "Bowlby One SC", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-size: 30px;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .p-news__back a {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 28px;
+    font-size: 22px;
+  }
+}
+
+.p-news__back a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/news-arrow_m.png) center left no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 100%;
+  content: "";
+}
+
+@media screen and (max-width: 900px) {
+  .p-news__back a::before {
+    width: 15px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .p-news__back a::before {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .p-news__back a:hover::before {
+    -webkit-transform: translate(-10px, 0);
+        -ms-transform: translate(-10px, 0);
+            transform: translate(-10px, 0);
+    -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: -webkit-transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+}
